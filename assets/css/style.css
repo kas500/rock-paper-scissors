@@ -1,0 +1,67 @@
+
+h1, h3, p {
+    text-align: center;
+    color: red;
+}
+
+button{
+    display: flex;
+    visibility: hidden;
+    min-width: 320px;
+    justify-content: space-around;
+    margin-top: 10%;
+}
+
+
+header, .game_area {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 40px;
+}
+
+.my_choises, .comp_choises {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 100px;
+    border: 3px solid black;
+}
+
+.comp_choises img, #battle_comp {
+    -webkit-transform: scaleX(-1);
+    transition: scaleX(-1);
+}
+
+img{
+    margin: 20px;
+    max-width: 150px;  
+}
+.battle_area{
+    display: block;
+    margin-top: 20%;
+}
+
+.battle_area img {
+    justify-items: baseline;
+    max-height: 100px;
+}
+
+.my_choises img:hover {
+    animation: shake 0.5s;
+    animation-iteration-count:initial;
+  }
+
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }

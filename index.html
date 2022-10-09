@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./assets/css/reset.css"></link>
+    <link rel="stylesheet" href="./assets/css/style.css"></link>
+    <title>Rock-Papers-Scissors</title>
+</head>
+
+<header>
+    <h1>Rock paper scissors game</h1>
+</header>
+
+<body>
+<div class="game_area">
+    <div class="my_choises">
+        <h3>Your choise</h3>
+        <img onclick="round(this)" src="./assets/images/rock.png" id="rock" value=0 alt="Rock">
+        <img onclick="round(this)" src="./assets/images/paper.png" id="paper" value=1 alt="Paper">
+        <img onclick="round(this)" src="./assets/images/scissors.png" id="scissors" value=2 alt="Scissors">
+    </div>
+       <div class="battle_area">
+        <img src="" id="battle_your" value>
+        <img src="" id="battle_comp" value>
+        <div>
+            <p id="result"></p>
+        </div>
+        <button id="show_statistics" onclick="statistics()">Show statistcs</button>
+       </div> 
+    <div class="comp_choises">
+        <h3>Comp choise</h3>
+        <img src="./assets/images/rock.png" id="rock" alt="Rock">
+        <img src="./assets/images/paper.png" id="paper" alt="Paper">
+        <img src="./assets/images/scissors.png" id="scissors" alt="Scissors">
+    </div>
+</div>
+
+
+<script src="./assets/script/script.js"></script>
+</body>
+</html>
