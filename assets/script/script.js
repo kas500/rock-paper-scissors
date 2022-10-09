@@ -69,3 +69,7 @@ function statistics(){
     alert("Win: "+statistic.win +"\nLost: "+statistic.lost+"\nTie: "+statistic.tie);
 }
 
+function reset(){
+    window.location.reload();
+}
+
