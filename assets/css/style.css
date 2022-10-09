@@ -1,26 +1,21 @@
 
+a {
+    margin-bottom: 20px;
+}
 h1, h3, p {
     text-align: center;
     color: red;
 }
-
-header{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin: 25px;
-}
-
-a {
-    margin: 25px;
-}
-
-.game_area {
+header, .game_area {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin: 40px;
+}
+header{
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .my_choises, .comp_choises {
